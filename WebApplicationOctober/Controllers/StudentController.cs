@@ -15,4 +15,15 @@ public class StudentController : Controller
         return View(_studentRepository.GetAllStudents());
         //return View();
     }
+
+    public IActionResult Details(int id)
+    {
+        StudentModel? student = _studentRepository.GetStudentById(id);
+        if (student == null)
+        {
+            return NotFound();
+        }
+
+        return View(student);
+    }
 }
