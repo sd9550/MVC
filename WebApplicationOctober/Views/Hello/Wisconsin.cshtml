@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisconsin Vibes</title>
+    <style>
+        :root {
+            --sky: #dff3ff;
+            --lake: #5ca7d6;
+            --forest: #2e6f4f;
+            --gold: #f4c542;
+            --cream: #f8f4ea;
+            --deep: #1f2d2a;
+            --accent: #d9762f;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to bottom, var(--sky), #eef7fb 30%, #f9f5ef 100%);
+            color: var(--deep);
+        }
+
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:
+                linear-gradient(rgba(12, 35, 42, 0.35), rgba(12, 35, 42, 0.45)),
+                url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 5rem);
+            margin: 0 0 1rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+
+        .tagline {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .tagline h2 {
+            font-size: clamp(1.8rem, 3vw, 2.8rem);
+            margin-bottom: 0.75rem;
+            color: var(--forest);
+        }
+
+        .tagline p {
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+            color: #3b4c48;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(46, 111, 79, 0.18);
+            border-radius: 18px;
+            padding: 1.5rem;
+            box-shadow: 0 12px 30px rgba(18, 47, 55, 0.08);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            border-radius: 999px;
+            background: var(--gold);
+            color: #4a3100;
+            font-weight: bold;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .card h3 {
+            margin: 0 0 0.7rem;
+            color: var(--deep);
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            margin: 0;
+            line-height: 1.7;
+            color: #33413d;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, var(--forest), #4c8b64);
+            color: white;
+            border-radius: 24px;
+            padding: 2rem;
+            margin-top: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .highlight h3 {
+            margin: 0 0 0.5rem;
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+        }
+
+        .highlight p {
+            margin: 0;
+            line-height: 1.7;
+            max-width: 600px;
+        }
+
+        .cta {
+            display: inline-block;
+            background: var(--gold);
+            color: #2a2200;
+            text-decoration: none;
+            padding: 0.9rem 1.5rem;
+            border-radius: 999px;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background: #1d2b2a;
+            color: #e7efe9;
+            text-align: center;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Wisconsin</h1>
+            <p>Where the lakes sparkle, the forests breathe, and the cheese is legendary.</p>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="tagline">
+            <h2>Pure Northwoods Energy</h2>
+            <p>
+                From scenic Lake Michigan shorelines to the rolling hills of the Driftless Area,
+                Wisconsin brings together cozy towns, friendly faces, and big adventure.
+            </p>
+        </section>
+
+        <section class="cards">
+            <article class="card">
+                <div class="badge">Lakes</div>
+                <h3>Freshwater Beauty</h3>
+                <p>Endless blue water, sunset views, and peaceful mornings by the shore.</p>
+            </article>
+
+            <article class="card">
+                <div class="badge">Forests</div>
+                <h3>Northwoods Escape</h3>
+                <p>Cool pine air, winding trails, and the kind of quiet that resets your mind.</p>
+            </article>
+
+            <article class="card">
+                <div class="badge">Cheese</div>
+                <h3>Local Flavor</h3>
+                <p>Classic curds, handmade cheese, and comfort-food favorites at every corner.</p>
+            </article>
+
+            <article class="card">
+                <div class="badge">Culture</div>
+                <h3>Big Heart</h3>
+                <p>Tailgate traditions, small-town charm, and a welcoming spirit all year long.</p>
+            </article>
+        </section>
+
+        <section class="highlight">
+            <div>
+                <h3>Welcome to the Badger State</h3>
+                <p>
+                    Wisconsin is a place where outdoor adventure, hometown pride, and simple pleasures all come together.
+                    It is the kind of place that feels like home the moment you arrive.
+                </p>
+            </div>
+            <a class="cta" href="#">Plan Your Visit</a>
+        </section>
+    </main>
+
+    <footer>
+        Cheers to Wisconsin — lakes, trails, and a little bit of cheese magic.
+    </footer>
+</body>
+</html>

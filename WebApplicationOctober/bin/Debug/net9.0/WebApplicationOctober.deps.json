@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "WebApplicationOctober/1.0.0": {
+        "runtime": {
+          "WebApplicationOctober.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebApplicationOctober/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
