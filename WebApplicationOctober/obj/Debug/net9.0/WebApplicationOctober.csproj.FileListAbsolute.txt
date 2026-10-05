@@ -95,3 +95,4 @@ C:\Users\stefa\MVC\WebApplicationOctober\obj\Debug\net9.0\refint\WebApplicationO
 C:\Users\stefa\MVC\WebApplicationOctober\obj\Debug\net9.0\WebApplicationOctober.pdb
 C:\Users\stefa\MVC\WebApplicationOctober\obj\Debug\net9.0\WebApplicationOctober.genruntimeconfig.cache
 C:\Users\stefa\MVC\WebApplicationOctober\obj\Debug\net9.0\ref\WebApplicationOctober.dll
+C:\Users\stefa\MVC\WebApplicationOctober\obj\Debug\net9.0\WebApplicationOctober.sourcelink.json
